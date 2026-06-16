@@ -19,6 +19,7 @@ jobs:
       contents: read
       pull-requests: read
       issues: read
+      models: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -31,5 +32,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           model: github-models/openai/gpt-4o-mini
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          use_github_token: true
