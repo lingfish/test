@@ -19,7 +19,7 @@ jobs:
       contents: read
       pull-requests: read
       issues: read
-      models: read
+      #models: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -31,4 +31,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          model: github-models/openai/gpt-4o-mini
+          model: opencode/deepseek-v4-flash-free
