@@ -23,6 +23,8 @@ jobs:
 
       - name: Run OpenCode
         uses: anomalyco/opencode/github@latest
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         with:
           model: openrouter/free
           share: false
