@@ -23,8 +23,6 @@ jobs:
 
       - name: Run OpenCode
         uses: anomalyco/opencode/github@latest
-        env:
-          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
         with:
-          model: gpt-5-mini
+          model: auto
           share: false
